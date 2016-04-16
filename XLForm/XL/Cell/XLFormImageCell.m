@@ -90,6 +90,11 @@
                                                           }]];
     }
     
+    
+    [alertController addAction:[UIAlertAction actionWithTitle: NSLocalizedString(@"BTN_CANCEL", nil)
+                                                        style: UIAlertActionStyleCancel
+                                                      handler: nil]];
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         alertController.modalPresentationStyle = UIModalPresentationPopover;
         alertController.popoverPresentationController.sourceView = self.contentView;
